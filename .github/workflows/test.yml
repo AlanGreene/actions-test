@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       # using KinD to provide the Kubernetes instance and kubectl
-      - uses: helm/kind-action@v1.5.0
-        with:
-          cluster_name: kind
+      # - uses: helm/kind-action@v1.5.0
+      #   with:
+      #     cluster_name: kind
 
       # setting up Tekton Pipelines, CLI and additional components...
       - uses: AlanGreene/tektoncd-actions/setup-tektoncd@main
